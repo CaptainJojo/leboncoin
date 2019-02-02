@@ -1,0 +1,83 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "leboncoin-20190202153728-authRole",
+			"UnauthRoleArn": "arn:aws:iam::667591126991:role/leboncoin-20190202153728-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::667591126991:role/leboncoin-20190202153728-authRole",
+			"Region": "eu-west-1",
+			"DeploymentBucketName": "leboncoin-20190202153728-deployment",
+			"UnauthRoleName": "leboncoin-20190202153728-unauthRole",
+			"StackName": "leboncoin-20190202153728",
+			"StackId": "arn:aws:cloudformation:eu-west-1:667591126991:stack/leboncoin-20190202153728/10f494c0-26f8-11e9-b2c1-066324f10f26"
+		}
+	},
+	"api": {
+		"leboncoin": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY",
+				"GraphQLAPIIdOutput": "nh5iwks7a5gcjlacdw2w46iwdm",
+				"GraphQLAPIEndpointOutput": "https://mnmsqluz3vcqniyorkboy6g2rq.appsync-api.eu-west-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-2ltrib7b6jew3nao7veuqv3e7e"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/leboncoin-20190202153728-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apileboncoin"
+			},
+			"lastPushTimeStamp": "2019-02-02T15:03:57.415Z",
+			"lastPushDirHash": "F+qLFaWFlju23D46tzP1r5N4PO4="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/leboncoin-20190202153728-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2019-02-02T15:03:57.416Z",
+			"output": {
+				"S3BucketSecureURL": "https://leboncoin-20190202154336-hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://leboncoin-20190202154336-hostingbucket.s3-website-eu-west-1.amazonaws.com",
+				"Region": "eu-west-1",
+				"HostingBucketName": "leboncoin-20190202154336-hostingbucket"
+			},
+			"lastPushDirHash": "oVqth3xI3XCRufUqp8GeI/K3ySs="
+		}
+	},
+	"auth": {
+		"cognito25e3cc0b": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/leboncoin-20190202153728-deployment/amplify-cfn-templates/auth/cognito25e3cc0b-cloudformation-template.yml",
+				"logicalId": "authcognito25e3cc0b"
+			},
+			"lastPushTimeStamp": "2019-02-02T15:03:57.418Z",
+			"output": {
+				"IdentityPoolId": "eu-west-1:589807f2-9f3d-44d4-baee-911b79e76540",
+				"IdentityPoolName": "leboncoin_identitypool_14178211"
+			},
+			"lastPushDirHash": "coQJtowjy0XKiRj143UJTmSp+Ec="
+		}
+	},
+	"analytics": {
+		"leboncoin": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/leboncoin-20190202153728-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
+				"logicalId": "analyticsleboncoin"
+			},
+			"lastPushTimeStamp": "2019-02-02T15:03:57.418Z",
+			"output": {
+				"appName": "leboncoin",
+				"Region": "eu-west-1",
+				"Id": "b3f0706b7cab42ce920ae436236d1a81"
+			},
+			"lastPushDirHash": "vwwq6qQ6J7NX8+ArcAHcdzHTH38="
+		}
+	}
+}

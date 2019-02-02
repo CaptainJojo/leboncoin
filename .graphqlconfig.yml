@@ -1,0 +1,16 @@
+projects:
+  leboncoin:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+        graphQLApiId: nh5iwks7a5gcjlacdw2w46iwdm
+      endpoints:
+        prod: >-
+          https://mnmsqluz3vcqniyorkboy6g2rq.appsync-api.eu-west-1.amazonaws.com/graphql

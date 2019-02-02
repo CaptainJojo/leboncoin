@@ -1,0 +1,11 @@
+{
+    "appName": "leboncoin",
+    "roleName": "pinpointLambdaRolecea59da9",
+    "cloudWatchPolicyName": "cloudWatchPolicycea59da9",
+    "pinpointPolicyName": "pinpointPolicycea59da9",
+    "authPolicyName": "pinpoint_amplify_cea59da9",
+    "unauthPolicyName": "pinpoint_amplify_cea59da9",
+    "authRoleName": "leboncoin-20190202153728-authRole",
+    "unauthRoleName": "leboncoin-20190202153728-unauthRole",
+    "IAMPrefix": "667591126991"
+}

@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "leboncoin-20190202153728-authRole",
+            "UnauthRoleArn": "arn:aws:iam::667591126991:role/leboncoin-20190202153728-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::667591126991:role/leboncoin-20190202153728-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "leboncoin-20190202153728-deployment",
+            "UnauthRoleName": "leboncoin-20190202153728-unauthRole",
+            "StackName": "leboncoin-20190202153728",
+            "StackId": "arn:aws:cloudformation:eu-west-1:667591126991:stack/leboncoin-20190202153728/10f494c0-26f8-11e9-b2c1-066324f10f26"
+        }
+    }
+}

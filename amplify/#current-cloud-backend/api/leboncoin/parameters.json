@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "leboncoin",
+    "schemaGraphql": "s3://leboncoin-20190202153728-deployment/amplify-appsync-files/schema.graphql.1549118391354",
+    "ResolverBucket": "leboncoin-20190202153728-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1549118391354"
+}

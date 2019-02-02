@@ -1,0 +1,7 @@
+type Announcement @model {
+  id: ID!
+  title: String!
+  description: String
+  image: String
+  price: Int
+}
